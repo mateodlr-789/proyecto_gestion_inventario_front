@@ -7,5 +7,5 @@ import { route } from '@/app/_constants'
 export async function GET() {
   const session = await getServerSession(authOptions)
   if (!session) redirect(route.login)
-  redirect(route.principal)
+  redirect(route.orders)
 }

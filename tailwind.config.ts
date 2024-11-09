@@ -13,7 +13,11 @@ const config: Config = {
         customDark: '#191619',
         customDark2: '#080707',
         customDark3: '#0e0e0e',
-        inputDark: '#100e10'
+        inputDark: '#100e10',
+        darkModebg: '#121212',
+        darkModeBgOverlay: '#1e1e1e',
+        darkModeBgbutton: '#363636',
+        darkModeBgOrange:'#F9A825'
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
