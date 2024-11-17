@@ -57,7 +57,7 @@ export function useFormHook() {
         mutation.mutateAsync(dataForm).then((data) => {
           if (data?.status === 200) {
             notify();
-            router.push(route.principal);
+            router.push(route.orders);
             setTimeout(() => {
               setLoading(false);
             }, 2000);

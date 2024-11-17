@@ -4,16 +4,8 @@ import Form from "./_components/form/form";
 export default function Page() {
   return (
     <Layout>
-      <Layout.Header>
-        <h1 className="flex text-black justify-center items-center gap-x-2 text-lg">
-          Iniciar sesión en su cuenta
-        </h1>
-      </Layout.Header>
-
-      <Layout.Form>
-        <Form />
-      </Layout.Form>
-
+      <h1 className="text-2xl font-bold text-orange-500 mb-6">Iniciar Sesión</h1>
+      <Form />
     </Layout>
   );
 }
