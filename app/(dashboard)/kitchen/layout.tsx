@@ -1,0 +1,13 @@
+import { Metadata } from "next";
+
+interface Props {
+  children: React.ReactNode;
+}
+
+export const metadata: Metadata = {
+  title: "Kitchen",
+};
+
+export default function Layout({ children }: Props) {
+    return <div className="w-full h-screen items-center flex justify-center bg-white">{children}</div>
+}

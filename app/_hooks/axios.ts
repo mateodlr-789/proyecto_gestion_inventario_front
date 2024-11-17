@@ -9,7 +9,7 @@ import axios, {
   
   export type Response<T> = Promise<AxiosResponse<T>>;
   
-  type TYPE_URL = "USUARIO";
+  type TYPE_URL = "USUARIO" | "ORDER" ;
   
   function httpErrorHandler(error: AxiosError) {
     if (error === null) throw new Error("Unrecoverable error!! Error is null!");
@@ -43,6 +43,7 @@ import axios, {
   function createAxios() {
     const getURL = (typeURL: TYPE_URL): string | undefined => {
       if (typeURL === "USUARIO") return process.env.NEXT_PUBLIC_URL_USUARIO;
+      if (typeURL === "ORDER") return process.env.NEXT_PUBLIC_URL_ORDER_KITCHEN;
   
       return "http://localhost:8000/api/user";
     };
