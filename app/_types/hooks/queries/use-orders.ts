@@ -7,8 +7,9 @@ export interface IOrder {
 }
 
 export interface ICreateOrder {
-  tableNumber: number;
-  items: string[];
+  name: string;  
+  user_id: number;      
+  types_id: number;   
 }
 
 export interface IDeleteOrder {
